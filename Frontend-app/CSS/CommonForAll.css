@@ -1,0 +1,58 @@
+body {
+    background-color:#14141B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainbluesurface{
+    background-color:rgba(21, 0, 80, 0.6) ;
+    height: 600px;
+    width: 1429px;
+    border-radius: 40px;
+    margin-top: 86px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#sublogo{
+    width:359px ;
+    height: 71px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+.headerhr{
+    margin-left: 20px;
+}
+
+/* The navigation bar */
+.topnav {
+    overflow: hidden;
+  }
+  
+.topnav a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 35px;
+    margin-right:25px ;
+    text-decoration: none;
+    font-size: 25px;
+    border-radius: 50px;
+}
+
+.topnav a:hover {
+    background-color:#333333 ;
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav-right {
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+}

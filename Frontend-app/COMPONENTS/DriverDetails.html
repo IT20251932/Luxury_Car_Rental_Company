@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/DriverDetails.css">
+
+    <title>DRIVER DETAILS</title>
+</head>
+
+<body>
+
+  <!-- Hello -->
+  <!-- I'm haraka -->
+
+  <div class="mainbluesurface" id="mainbluesurface">
+      
+    <div class="topnav">
+        <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <a class="active" href="DriverAdminDashboard.html">Home</a>
+            <a class="active" href="DriverAdminLogin.html">LogOut</a>
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="">  
+      <button class="addnew" onclick="myFunctionaddnew()">  Add New Driver </button>
+    </div>
+
+    <div class="tablecontent">
+      <div class="driverdetailcontent" style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>ID</th>
+              <th>Registered Date</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>NIC</th>
+              <th>Licence No.</th>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Assigned/ Vacant</th>
+            </tr>
+
+            <tr>
+              <td>D001</td>
+              <td>02.05.2020</td>
+              <td>Liam</td>
+              <td>James</td>
+              <td>198554810155</td>
+              <td>B4821475</td>
+              <td>0762493814</td>
+              <td>liam@gmail.com</td>
+              <td><button id="assign"> Assigned </button></td>
+              
+            </tr>
+          </table>
+        </div>
+        
+          
+      </div>
+  </div>
+<!-- Onclick function for "Add New Driver"-->
+  <script>
+    function myFunctionaddnew() {
+      location.replace("AddNewDriver.html")
+    }
+</script>
+
+</body>
+</html>

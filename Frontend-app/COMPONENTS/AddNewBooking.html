@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/Addnewdriver.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Addnewbooking.css">
 
     <title>ADD A NEW Booking</title>
 </head>
@@ -27,68 +27,74 @@
                       <a href="BookingDetails.html"> Booking </a>
                       <a href="AddNewBooking.html"> Add New Booking </a>
                       <a href="BookingReports.html"> Booking Report </a>
-                      <a href="DriverBookingRequests.html"> Requests </a>
+                      
                     </div>
                 </div>
 
-                <a class="active" href="DriverAdminDashboard.html">Home</a>
-                <a class="active" href="DriverAdminLogin.html">LogOut</a>
+                <a class="active" href="BookingAdminDashboard.html">Home</a>
+                <a class="active" href="BookingAdminLogin.html">LogOut</a>
             </div>
         </div>
         <hr id="headerhr">
 
         <div class="contentblock"> 
-                <h2 id="topic" > Add New Driver </h2>
-                <!-- Form of adding a new driver to the system-->
+                <h2 id="topic" > Add New Booking </h2>
+                <!-- Form of adding a new booking to the system-->
                 <table class="addnewformtable" >  
                     <form action="/action_page.php">
                         <tr>
-                            <td><label for="fname">Registered Date </label> </td>
+                            <td><label for="id">ID </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="date" id="rdate" name="rdate" required > </td>
+                            <td> <input class="forminput" type="text" id="id" name="id" required > </td>
                         </tr>
                         <tr>
-                            <td> <label for="fname">First Name </label> </td>
+                            <td> <label for="did">Driver ID </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td>
+                            <td> <input class="forminput" type="text" id="did" name="did" maxlength="8" value="" required> </td>
                         </tr>
                         <tr>
-                            <td> <label for="lname">Last Name </label> </td>
+                            <td> <label for="Vplate">Vehicle No. Plate </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="lname" name="lname" value="" required> </td>
+                            <td> <input class="forminput" type="text" id="Vplate" name="Vplate" value="" required> </td>
                         </tr>
                         <tr>
-                            <td>  <label for="NIC"> NIC </label> </td>
+                            <td>  <label for="date"> Pickup Date </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="nic" name="nic" maxlength="12" value="" required> </td>
+                            <td> <input class="forminput" type="date" id="date" name="date"  value="" required> </td>
                         </tr>
                         <tr>
-                            <td> <label for="Licence No.">Licence No. </label></td>
+                            <td> <label for="time">Pickup Time </label></td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="lno." name="Licence No." value="" required> </td>
+                            <td> <input class="forminput" type="time" id="time" name="time" value="" required> </td>
                         </tr>
                         <tr>
-                            <td>  <label for="phoneno."> Contact No. </label> </td>
+                            <td>  <label for="place"> Pickup Place </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput"  type="tel" id="phone" name="phone" placeholder="076 456 7890" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required > </td>
+                            <td> <input class="forminput"  type="text" id="place" name="place"  required > </td>
                         </tr>
                         <tr>
-                            <td>  <label for="email"> E-mail </label> </td>
+                            <td>  <label for="Dtime"> Drop-off Time </label> </td>
                             <td> : </td>
-                            <td>  <input class="forminput" type="email" id="email" name="email" required> </td>
+                            <td>  <input class="forminput" type="time" id="Dtime" name="Dtime" required> </td>
                         </tr>
+                    </tr>
+                    <tr>
+                        <td>  <label for="Dplace"> Drop-off Place </label> </td>
+                        <td> : </td>
+                        <td>  <input class="forminput" type="text" id="Dplace" name="Dplace" required> </td>
+                    </tr>
                     </form>
                 </table>
 
                 <br>
-                <input class="submitbtn" onclick="myFunctionsubmitadddriver()" type="submit" value="ADD NEW DRIVER">
+                <input class="submitbtn" onclick="myFunctionsubmitaddbooking()" type="submit" value="ADD NEW BOOKING">
                 <br><br>
             </div>  
         </div>
 
 <!-- <script>
-    function myFunctionsubmitadddriver() {
-        let text = "New driver details have been added SUCESSFULLY . . .";
+    function myFunctionsubmitaddbooking() {
+        let text = "New booking details have been added SUCESSFULLY . . .";
         if (confirm(text) == true) {
         text = "You pressed OK!";
         } else {

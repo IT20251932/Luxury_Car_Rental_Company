@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Addnewbooking.css">
 
-    <title>ADD A NEW Booking</title>
+    <title>ADD A NEW BOOKING</title>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
                 <table class="addnewformtable" >  
                     <form action="/action_page.php">
                         <tr>
-                            <td><label for="id">ID </label> </td>
+                            <td><label for="id">Booking ID </label> </td>
                             <td> : </td>
                             <td> <input class="forminput" type="text" id="id" name="id" required > </td>
                         </tr>
@@ -53,10 +53,31 @@
                             <td> <input class="forminput" type="text" id="did" name="did" maxlength="8" value="" required> </td>
                         </tr>
                         <tr>
+                            <td><label for="fname">First name </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="fname" name="fname" required > </td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="lname" name="lname" required > </td>
+                        </tr>
+                        <tr>
                             <td> <label for="Vplate">Vehicle No. Plate </label> </td>
                             <td> : </td>
                             <td> <input class="forminput" type="text" id="Vplate" name="Vplate" value="" required> </td>
                         </tr>
+                        <tr>
+                            <td>  <label for="phoneno"> Contact Number </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput"  type="tel" id="phone" name="phone" placeholder="07X XXX XXXX" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required > </td>
+                        </tr>
+                        <tr>
+                            <td>  <label for="email"> E-mail </label> </td>
+                            <td> : </td>
+                            <td>  <input class="forminput" type="email" id="email" name="email"  placeholder="example@gmail.com" required> </td>
+                        </tr>
+                        
                         <tr>
                             <td>  <label for="date"> Pickup Date </label> </td>
                             <td> : </td>

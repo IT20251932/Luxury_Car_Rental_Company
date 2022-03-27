@@ -23,14 +23,14 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.addnewformtable{
+.updatedriverform{
     width:700px;
     margin-left: 220px;
     float:center;
 }
 
 #topic{
-    padding-left: 340px;
+    padding-left: 280px;
     font-size: 45px;
     font-weight: 700;
     color: #31118B;
@@ -47,9 +47,9 @@
     border: none;
 }
 
-.submitbtn{
-    margin-left: 240px;
-    width: 525px;
+.updateconfirmbtn{
+    margin-left: 180px;
+    width: 300px;
     height: 48px;
     background-color: #0000FF;
     border-radius: 20px;
@@ -57,8 +57,27 @@
     color: #FFFFFF;
     font-weight: 500;
     border: none;
+    text-align: center;
 }
 
-.addnewformtable td {
+.submitcanclebtn{
+    width: 300px;
+    height: 48px;
+    background-color: #0000FF;
+    border-radius: 20px;
+    font-size:20px ;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+}
+
+.updateformtable  {
+    margin-left: 240px;
+}
+
+
+.updateformtable td {
     padding-top: 10px;
 }
+

@@ -23,14 +23,14 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.addnewformtable{
+.deleteformtable{
     width:700px;
     margin-left: 220px;
     float:center;
 }
 
-#topic{
-    padding-left: 340px;
+#qtopic{
+    margin-left: 45px;
     font-size: 45px;
     font-weight: 700;
     color: #31118B;
@@ -47,9 +47,9 @@
     border: none;
 }
 
-.submitbtn{
-    margin-left: 240px;
-    width: 525px;
+.deleteconfirmbtn{
+    margin-left: 190px;
+    width: 300px;
     height: 48px;
     background-color: #0000FF;
     border-radius: 20px;
@@ -59,6 +59,19 @@
     border: none;
 }
 
-.addnewformtable td {
+.deletecanclebtn{
+    text-align: center;
+    margin-left: 15px;
+    width: 300px;
+    height: 48px;
+    background-color: #0000FF;
+    border-radius: 20px;
+    font-size:20px ;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+}
+
+.deleteformtable td {
     padding-top: 10px;
 }

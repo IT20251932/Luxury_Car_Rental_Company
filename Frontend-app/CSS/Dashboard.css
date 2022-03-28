@@ -2,6 +2,9 @@
   box-sizing: border-box;
 }
 
+.maintopics {
+  margin-left: 250px;
+}
 .maintopics::after {
   content: "";
   clear: both;
@@ -25,7 +28,7 @@
   border-radius: 30px;
   margin-left: 45px;
   margin-top: 15px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .lowersubtopics {
@@ -62,7 +65,6 @@
   color: #ffffff;
   font-weight: 500;
   border: none;
-  
 }
 
 #reportgo,
@@ -71,4 +73,12 @@
   height: 45px;
   padding-top: 10px;
   padding-left: 20px;
+}
+
+.reportcomp {
+  margin-left: 180px;
+}
+
+.centerbtn {
+  margin-left: 500px;
 }

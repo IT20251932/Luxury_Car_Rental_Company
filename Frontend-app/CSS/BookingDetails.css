@@ -49,3 +49,25 @@ button:hover {
   cursor: pointer;
   font-weight: 700;
 }
+
+#confirm {
+  float: right;
+  border-radius: 25px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.forminput {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+  width: 318px;
+  height: 40px;
+  border-radius: 25.39px;
+  border: none;
+}

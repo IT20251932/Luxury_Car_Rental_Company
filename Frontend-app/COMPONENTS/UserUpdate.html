@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/BookingUpdate.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/UserUpdate.css">
 
-    <title> Update Booking Details </title>
+    <title> Update User Details </title>
 </head>
 
 <body>
@@ -38,21 +38,18 @@
         <hr id="headerhr">
 
         <div class="contentblock"> 
-            <h2 id="topic" > Update Booking Details </h2>
+            <h2 id="topic" > Update User Details </h2>
 
             <!-- Update booking details -->
             <table class="updateformtable" >  
                 <form class="updatebookingform" action="/action_page.php">
+                    
                     <tr>
-                        <td><label for="id">Booking ID </label> </td><!-- cannot update-->
+                        <td><label for="Uname">User Name </label> </td><!-- cannot update-->
                         <td> : </td>
-                        <td> <input class="forminput" type="text" id="id" name="id" required > </td>
+                        <td> <input class="forminput" type="text" id="Uname" name="Uname" required > </td>
                     </tr>
-                    <tr>
-                        <td> <label for="did">Driver ID </label> </td><!-- cannot update-->
-                        <td> : </td>
-                        <td> <input class="forminput" type="text" id="did" name="did" maxlength="8" value="" required> </td>
-                    </tr>
+                   
                     <tr>
                         <td><label for="fname">First Name </label> </td><!-- can update-->
                         <td> : </td>
@@ -64,47 +61,20 @@
                         <td> <input class="forminput" type="text" id="lname" name="lname" required > </td>
                     </tr>
                     <tr>
-                        <td> <label for="Vplate">Vehicle No. Plate </label> </td><!-- cannot update-->
+                        <td>  <label for="NIC"> NIC </label> </td><!-- cannot update-->
                         <td> : </td>
-                        <td> <input class="forminput" type="text" id="Vplate" name="Vplate" value="" required> </td>
+                        <td> <input class="forminput" type="text" id="nic" name="nic" maxlength="12" value="" required> </td>
                     </tr>
                     <tr>
-                        <td>  <label for="phoneno"> Contact Number </label> </td><!-- cannot update-->
+                        <td>  <label for="phoneno"> Contact Number </label> </td><!-- can update-->
                         <td> : </td>
                         <td> <input class="forminput"  type="tel" id="phone" name="phone" placeholder="07X XXX XXXX" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required > </td>
                     </tr>
                     <tr>
-                        <td>  <label for="email"> E-mail </label> </td><!-- cannot update-->
+                        <td>  <label for="email"> E-mail </label> </td><!-- can update-->
                         <td> : </td>
                         <td>  <input class="forminput" type="email" id="email" name="email"  placeholder="example@gmail.com" required> </td>
                     </tr>
-                    
-                    <tr>
-                        <td>  <label for="date"> Pickup Date </label> </td><!-- can update-->
-                        <td> : </td>
-                        <td> <input class="forminput" type="date" id="date" name="date"  value="" required> </td>
-                    </tr>
-                    <tr>
-                        <td> <label for="time">Pickup Time </label></td><!-- can update-->
-                        <td> : </td>
-                        <td> <input class="forminput" type="time" id="time" name="time" value="" required> </td>
-                    </tr>
-                    <tr>
-                        <td>  <label for="place"> Pickup Place </label> </td><!-- can update-->
-                        <td> : </td>
-                        <td> <input class="forminput"  type="text" id="place" name="place"  required > </td>
-                    </tr>
-                    <tr>
-                        <td>  <label for="Dtime"> Drop-off Time </label> </td><!-- can update-->
-                        <td> : </td>
-                        <td>  <input class="forminput" type="time" id="Dtime" name="Dtime" required> </td>
-                    </tr>
-                </tr>
-                <tr>
-                    <td>  <label for="Dplace"> Drop-off Place </label> </td><!-- cannot update-->
-                    <td> : </td>
-                    <td>  <input class="forminput" type="text" id="Dplace" name="Dplace" required> </td>
-                </tr>
                 </form>
             </table>
 

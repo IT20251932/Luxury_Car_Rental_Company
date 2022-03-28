@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/AddNewBooking.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/User.css">
 
 
-    <title>ADD A NEW BOOKING</title>
+    <title>USER PROFILE</title>
 </head>
 
 <body>
@@ -27,6 +27,7 @@
                     <div class="dropdown-content">
                       <a href="BookingDetails.html"> Booking Details</a>
                       <a href="AddNewBooking.html"> Add New Booking </a>
+                      <a href="UserProfile.html"> User Profile </a>
                       <a href="BookingReports.html"> Booking Report </a>
                       
                     </div>
@@ -40,20 +41,17 @@
 
         <div class="contentblock"> 
             
-                <h2 id="topic" > Add New Booking </h2>
+                <h2 id="topic" > User Profile </h2>
                 <!-- Form of adding a new booking to the system-->
                 <table class="addnewformtable" >  
                     <form action="/action_page.php">
+
                         <tr>
-                            <td><label for="id">Booking ID </label> </td>
+                            <td><label for="Uname">User Name </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="id" name="id" required > </td>
+                            <td> <input class="forminput" type="text" id="Uname" name="Uname" required > </td>
                         </tr>
-                        <tr>
-                            <td> <label for="did">Driver ID </label> </td>
-                            <td> : </td>
-                            <td> <input class="forminput" type="text" id="did" name="did" maxlength="8" value="" required> </td>
-                        </tr>
+                       
                         <tr>
                             <td><label for="fname">First Name </label> </td>
                             <td> : </td>
@@ -65,9 +63,9 @@
                             <td> <input class="forminput" type="text" id="lname" name="lname" required > </td>
                         </tr>
                         <tr>
-                            <td> <label for="Vplate">Vehicle No. Plate </label> </td>
+                            <td>  <label for="NIC"> NIC </label> </td>
                             <td> : </td>
-                            <td> <input class="forminput" type="text" id="Vplate" name="Vplate" value="" required> </td>
+                            <td> <input class="forminput" type="text" id="nic" name="nic" maxlength="12" value="" required> </td>
                         </tr>
                         <tr>
                             <td>  <label for="phoneno"> Contact Number </label> </td>
@@ -80,37 +78,12 @@
                             <td>  <input class="forminput" type="email" id="email" name="email"  placeholder="example@gmail.com" required> </td>
                         </tr>
                         
-                        <tr>
-                            <td>  <label for="date"> Pickup Date </label> </td>
-                            <td> : </td>
-                            <td> <input class="forminput" type="date" id="date" name="date"  value="" required> </td>
-                        </tr>
-                        <tr>
-                            <td> <label for="time">Pickup Time </label></td>
-                            <td> : </td>
-                            <td> <input class="forminput" type="time" id="time" name="time" value="" required> </td>
-                        </tr>
-                        <tr>
-                            <td>  <label for="place"> Pickup Place </label> </td>
-                            <td> : </td>
-                            <td> <input class="forminput"  type="text" id="place" name="place"  required > </td>
-                        </tr>
-                        <tr>
-                            <td>  <label for="Dtime"> Drop-off Time </label> </td>
-                            <td> : </td>
-                            <td>  <input class="forminput" type="time" id="Dtime" name="Dtime" required> </td>
-                        </tr>
-                    </tr>
-                    <tr>
-                        <td>  <label for="Dplace"> Drop-off Place </label> </td>
-                        <td> : </td>
-                        <td>  <input class="forminput" type="text" id="Dplace" name="Dplace" required> </td>
-                    </tr>
+                        
                     </form>
                 </table>
 
                 <br>
-                <input class="submitbtn" onclick="myFunctionsubmitaddbooking()" type="submit" value="ADD NEW BOOKING">
+                <input class="submitbtn" onclick="myFunctionsubmitaddbooking()" type="submit" value="CONFIRM">
                 <br><br>
             </div>  
         </div>

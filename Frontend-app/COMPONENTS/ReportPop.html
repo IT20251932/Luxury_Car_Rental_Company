@@ -41,10 +41,10 @@
     <hr id="headerhr"> 
 
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+    <!-- <button id="myBtn">Open Modal</button> -->
 
     <!-- The Modal -->
-        <div id="BookingReport" class="view">
+        <!-- <div id="BookingReport" class="view"> -->
            
             <!-- Modal content -->
             <div class="viewbookingtable">
@@ -52,29 +52,35 @@
                 <h2 id="topic"> Report Details</h2>
                 <table class="viewbookingtable" > 
                         <tr>
-                            <td class="viewforminput"><label for="from">From</label> </td> 
+                            <td class="viewforminput"><label for="from">From :</label> </td> 
                             <!-- <td> <input class="forminput" type="text" id="from" name="from" required > </td> -->
                         </tr> 
                         <tr>
-                            <td class="viewforminput"><label for="to">To </label> </td>
+                            <td class="viewforminput"><label for="to">To :</label> </td>
                             <!-- <td> <input class="forminput" type="text" id="to" name="to" required > </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput"> <label for="status">Status </label> </td>
+                            <td class="viewforminput"> <label for="status">Status :</label> </td>
                             <!-- <td> <input class="forminput" type="text" id="status" name="status" value="" required> </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput"> <label for="booking">Number Of Booking </label> </td>
+                            <td class="viewforminput"> <label for="booking">Number Of Booking :</label> </td>
                             <!-- <td> <input class="forminput" type="text" id="booking" name="booking" value="" required> </td> -->
                         </tr>
+
+                        <tr>
+                              
+                        <!-- Download button-->
+                            <button id="downloadbtn"  onclick="bookingdofunction()"> DOWNLOAD </button>
+                        </tr>
                        
+                
                 </table>
 
-                <!-- Download button-->
-                <button id="downloadbtn"  onclick="bookingdofunction()"> DOWNLOAD </button>
+                
                 
             </div>
-        </div>
+        <!-- </div> -->
     </div>
 
     <script>

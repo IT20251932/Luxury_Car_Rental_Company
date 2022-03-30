@@ -25,10 +25,11 @@
         <hr id="headerhr">
 
         <div class="report">
-            <div class="name" >  From   <br> <p class="numberof"> <input type="date"> </p> </div>
-            <div class="name" >  To  <br> <p class="numberof"> <input type="date"> </p> </div>
+            <div class="name" >  From   <br> <p class="numberof"> <input class="forminput" type="date"> </p> </div>
+            <div class="name" >  To  <br> <p class="numberof"> <input class="forminput"type="date"> </p> </div>
             <!-- <div class="name" onclick="myFunction3()">  Year    <br> <p class="numberof"> <input type="date"> </p> </div><br> -->
-            <div class="name" >  Status    <br> <p class="numberof"> <select>
+            <div class="name" >  Status    <br> <p class="numberof">
+                 <select  class="forminput">
                 <option>All</option>
                 <option>Pending</option>
                 <option>Completed</option>
@@ -36,7 +37,13 @@
           
           </div><br>
 
-          <div class="name" onclick="myFunction1()" >  Booking Details   <br> <p class="numberof">  </p> </div>
+          <div class="name" onclick="myFunction1()" > 
+            
+             Booking Details   <br> <p class="numberof">  </p>
+         </div>
+
+          <!-- Download button-->
+            <button id="downloadbtn"  onclick="bookingupdatefunction()"> GENERATE REPORT </button>
         </div>
     </div>
 
@@ -44,11 +51,12 @@
         function myFunction1() {
           location.replace("bookingView.html")
         }
+        function bookingupdatefunction() {
+          location.replace("ReportPop.html")
+        }
 
         
     </script>
-     <!-- Download button-->
-     <button id="downloadbtn"  onclick="bookingupdatefunction()"> GENERATE REPORTL </button>
-
+   
 </body>
 </html>

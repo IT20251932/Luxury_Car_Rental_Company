@@ -32,32 +32,23 @@
                 <option>All</option>
                 <option>Pending</option>
                 <option>Completed</option>
-            </select> </p> </div><br>
+            </select> </p>
+          
+          </div><br>
+
+          <div class="name" onclick="myFunction1()" >  Booking Details   <br> <p class="numberof">  </p> </div>
         </div>
     </div>
 
     <script>
         function myFunction1() {
-          location.replace("DriverDetails.html")
+          location.replace("bookingView.html")
         }
 
-        function myFunction2() {
-          location.replace("DriverAssigned.html")
-        }
-
-        function myFunction3() {
-          location.replace("DriverVacant.html")
-        }
-
-        function myFunction4() {
-          location.replace("Drivers'Report.html")
-        }
-
-        function myFunction5() {
-          location.replace("DriverBookingRequests.html")
-        }
+        
     </script>
-    
+     <!-- Download button-->
+     <button id="downloadbtn"  onclick="bookingupdatefunction()"> GENERATE REPORTL </button>
 
 </body>
 </html>

@@ -49,7 +49,21 @@ button:hover {
   cursor: pointer;
   font-weight: 700;
 }
-
+.generate {
+  float: right;
+  border-radius: 25px;
+  width: 235px;
+  height: 41px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 55px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
 #confirm {
   float: right;
   border-radius: 25px;

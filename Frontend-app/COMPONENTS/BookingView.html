@@ -41,7 +41,7 @@
     <hr id="headerhr"> 
 
     <!-- Trigger/Open The Modal -->
-    <button id="myBtn">Open Modal</button>
+    <button id="generate">Open Modal</button>
 
     <!-- The Modal -->
         <div id="Bookingview" class="view">
@@ -52,67 +52,66 @@
                 <h2 id="topic"> Booking Details</h2>
                 <table class="viewbookingtable" > 
                         <tr>
-                            <td class="viewforminput"><label for="id">Booking ID</label> </td> 
+                            <td class="viewforminput"><label for="id">Booking ID :</label> </td> 
                             <!-- <td> <input class="forminput" type="text" id="id" name="id" required > </td> -->
                         </tr> 
                         <tr>
-                            <td class="viewforminput"><label for="did">Driver ID </label> </td>
+                            <td class="viewforminput"><label for="did">Driver ID :</label> </td>
                             <!-- <td> <input class="forminput" type="text" id="did" name="did" required > </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput"> <label for="fname">First Name </label> </td>
+                            <td class="viewforminput"> <label for="fname">First Name :</label> </td>
                             <!-- <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput"> <label for="lname">Last Name </label> </td>
+                            <td class="viewforminput"> <label for="lname">Last Name :</label> </td>
                              <!-- <td> <input class="forminput" type="text" id="lname" name="lname" value="" required> </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput">  <label for="Vplate"> Vehicle No. Plate</label> </td>
+                            <td class="viewforminput">  <label for="Vplate"> Vehicle No. Plate :</label> </td>
                           
                             <!-- <td> <input class="forminput" type="text" id="Vplate" name="Vplate" value="" required> </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput"> <label for="phoneno">Contact Number</label></td>
+                            <td class="viewforminput"> <label for="phoneno">Contact Number :</label></td>
                           
                             <!-- <td> <input class="forminput" type="text" id="phoneno" name="phoneno" placeholder="07X XXX XXXX" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"value="" required> </td> -->
                         </tr>
                         <tr>
-                            <td class="viewforminput">  <label for="email"> E-mail</label> </td>
+                            <td class="viewforminput">  <label for="email"> E-mail :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="email" id="email" name="email" placeholder="example@gmail.com" required> </td> -->
                         </tr>
 						 <tr>
-                            <td class="viewforminput">  <label for="date">  Pickup Date</label> </td>
+                            <td class="viewforminput">  <label for="date">  Pickup Date :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="date" id="date" name="date"  required> </td> -->
                         </tr>
 						 <tr>
-                            <td class="viewforminput">  <label for="time"> Pickup Time</label> </td>
+                            <td class="viewforminput">  <label for="time"> Pickup Time :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="time" id="time" name="time"  required> </td> -->
                         </tr>
 						 <tr>
-                            <td class="viewforminput">  <label for="place"> Pickup Place</label> </td>
+                            <td class="viewforminput">  <label for="place"> Pickup Place :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="place" id="place" name="place"  required> </td> -->
                         </tr>
 						 <tr>
-                            <td class="viewforminput">  <label for="Dtime">  Drop-off Time </label> </td>
+                            <td class="viewforminput">  <label for="Dtime">  Drop-off Time :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="Dtime" id="Dtime" name="Dtime"  required> </td> -->
                         </tr>
 						 <tr>
-                            <td class="viewforminput">  <label for="Dplace"> Drop-off Place </label> </td>
+                            <td class="viewforminput">  <label for="Dplace"> Drop-off Place :</label> </td>
                            
                             <!-- <td>  <input class="forminput" type="Dplace" id="Dplace" name="Dplace"  required> </td> -->
                         </tr>
                 </table>
 
                 <!-- Update button-->
-                <button id="bookingupdate"  onclick="bookingupdatefunction()"> UPDATE </button>
-                 <!-- Delete button-->
-                <button id="bookingdelete" onclick="bookingdeletefunction()"> DELETE </button>
+                <button id="bookingdnld"  onclick="bookingupdatefunction()"> DOWNLOAD </button>
+               
             </div>
         </div>
     </div>
@@ -122,7 +121,7 @@
         var modal = document.getElementById("Bookingview");
         
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("generate");
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];

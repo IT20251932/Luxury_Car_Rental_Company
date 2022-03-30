@@ -24,6 +24,7 @@
 
       <div class="">
         <button class="addnew" onclick="myFunctionaddnew()">Add New Booking</button>
+        <button class="generate" onclick="myBtn()">OPEN MODAL</button>
         
         <input class="forminput" type="text" id="place" name="place" placeholder="Search...." required />
       </div>
@@ -62,6 +63,7 @@
               <td>Nugegoda</td>
 
               <td><button id="confirm" onclick="myFunctionedit()">Edit</button></td>
+              
               <td><button id="confirm" onclick="myFunctiondelete()">Delete</button></td>
             </tr>
           </table>
@@ -78,6 +80,12 @@
       }
       function myFunctiondelete() {
         location.replace("BookingDelete.html");
+      }
+      function myBtn(){
+        location.replace("BookingReport.html")
+      }
+      function myBtn(){
+        location.replace("BookingView.html")
       }
     </script>
   </body>

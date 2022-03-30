@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/BookingReport.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/ReportPop.css">
 
 
     <title>REPORT DETAILS </title>
@@ -47,27 +47,31 @@
         <div id="BookingReport" class="view">
            
             <!-- Modal content -->
-            <div class="viewcontent">
+            <div class="viewbookingtable">
                 <span class="close">&times;</span>
                 <h2 id="topic"> Report Details</h2>
                 <table class="viewbookingtable" > 
                         <tr>
                             <td class="viewforminput"><label for="from">From</label> </td> 
-                            <!-- <td> <input class="forminput" type="text" id="id" name="id" required > </td> -->
+                            <!-- <td> <input class="forminput" type="text" id="from" name="from" required > </td> -->
                         </tr> 
                         <tr>
                             <td class="viewforminput"><label for="to">To </label> </td>
-                            <!-- <td> <input class="forminput" type="text" id="did" name="did" required > </td> -->
+                            <!-- <td> <input class="forminput" type="text" id="to" name="to" required > </td> -->
                         </tr>
                         <tr>
                             <td class="viewforminput"> <label for="status">Status </label> </td>
-                            <!-- <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td> -->
+                            <!-- <td> <input class="forminput" type="text" id="status" name="status" value="" required> </td> -->
+                        </tr>
+                        <tr>
+                            <td class="viewforminput"> <label for="booking">Number Of Booking </label> </td>
+                            <!-- <td> <input class="forminput" type="text" id="booking" name="booking" value="" required> </td> -->
                         </tr>
                        
                 </table>
 
                 <!-- Download button-->
-                <button id="bookingupdate"  onclick="bookingupdatefunction()"> DOWNLOAD </button>
+                <button id="downloadbtn"  onclick="bookingdofunction()"> DOWNLOAD </button>
                 
             </div>
         </div>

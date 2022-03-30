@@ -59,3 +59,17 @@
   padding-top: 10px;
   padding-left: 20px;
 }
+#downloadbtn {
+  border-radius: 25px;
+  width: 510px;
+  height: 40px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 22px;
+  color: #ffffff;
+  padding: 6px 20px;
+  margin-top: 15px;
+  margin-left: 800px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 600px;
+}

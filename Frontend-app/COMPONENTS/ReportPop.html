@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/BookingReport.css">
+
+
+    <title>REPORT DETAILS </title>
+</head>
+
+<body>
+
+    <div class="mainbluesurface" id="mainbluesurface">
+      
+        <div class="topnav">
+            <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+            <div class="topnav-right">
+                <!-- Dropdown in the navigation bar-->
+                <div class="dropdown">
+                    <button class="dropbtn"> Booking 
+                        <img src="../IMAGES/Dropdown.png" alt="dropdown" id="dropdownicon"> 
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="BookingDetails.html"> Booking Details </a>
+                      <a href="AddNewBooking.html"> Add New Booking </a>
+                      <a href="UserProfile.html"> User Profile </a>
+                      <a href="BookingReport.html"> Booking Report </a>
+                      
+                    </div>
+                </div>
+
+                <a class="active" href="BookingAdminDashboard.html">Home</a>
+                <a class="active" href="BookingAdminLogin.html">LogOut</a>
+            </div>
+        </div>
+    
+    <hr id="headerhr"> 
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+
+    <!-- The Modal -->
+        <div id="BookingReport" class="view">
+           
+            <!-- Modal content -->
+            <div class="viewcontent">
+                <span class="close">&times;</span>
+                <h2 id="topic"> Report Details</h2>
+                <table class="viewbookingtable" > 
+                        <tr>
+                            <td class="viewforminput"><label for="from">From</label> </td> 
+                            <!-- <td> <input class="forminput" type="text" id="id" name="id" required > </td> -->
+                        </tr> 
+                        <tr>
+                            <td class="viewforminput"><label for="to">To </label> </td>
+                            <!-- <td> <input class="forminput" type="text" id="did" name="did" required > </td> -->
+                        </tr>
+                        <tr>
+                            <td class="viewforminput"> <label for="status">Status </label> </td>
+                            <!-- <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td> -->
+                        </tr>
+                       
+                </table>
+
+                <!-- Download button-->
+                <button id="bookingupdate"  onclick="bookingupdatefunction()"> DOWNLOAD </button>
+                
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("BookingReport");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        
+        // // When the user clicks anywhere outside of the modal, close it
+        // window.onclick = function(event) {
+        //     if (event.target == modal) {
+        //         modal.style.display = "none";
+        //     }
+        // }
+
+    </script>
+    
+    
+
+</body>
+</html>

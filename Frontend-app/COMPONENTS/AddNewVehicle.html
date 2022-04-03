@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/AddNewVehicle.css">
+
+    <title>ADD A NEW Vehicle</title>
+</head>
+
+<body>
+
+    <div class="mainbluesurface" id="mainbluesurface">
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+            <div class="topnav-right">
+                <!-- Dropdown in the navigation bar-->
+                <div class="dropdown">
+                    <button class="dropbtn">Add New Vehicle  
+                        <img src="../IMAGES/Dropdown.png" alt="dropdown" id="dropdownicon"> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="VehicleDetails.html"> Vehicle </a>
+                      <a href="VehicleVacant.html"> Vacant </a>
+                      <a href="Vehicle'Register New Vehicle.html"> Register New Vehicle </a>
+                      <a href="VehicleBookingRequests.html"> Requests </a>
+                    </div>
+                </div>
+
+                <a class="active" href="VehicleAdminDashboard.html">Home</a>
+                <a class="active" href="VehicleAdminLogin.html">LogOut</a>
+            </div>
+        </div>
+        <hr id="headerhr">
+
+        <div class="contentblock"> 
+                <h2 id="topic" > Add New Vehicle </h2>
+                <!-- Form of adding a new driver to the system-->
+                <table class="addnewformtable" >  
+                    <form action="/action_page.php">
+                        <tr>
+                            <td><label for="fname">Vehicle No </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="rdate" name="rdate" required > </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="fname">Vehicle Type </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="lname">No.of seats </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="lname" name="lname" value="" required> </td>
+                        </tr>
+                        <tr>
+                            <td>  <label for="NIC"> Vehicle Colour </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="nic" name="nic" maxlength="12" value="" required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label for="Licence No.">Phone Number </label></td>
+                            <td> : </td>
+                            <td> <input class="forminput" type="text" id="lno." name="Licence No." value="" required> </td>
+                        </tr>
+                        
+                    </form>
+                </table>
+
+                <br>
+                <!-- After clicking add button a confirmation alert should pop up-->
+                <button class="submitbtn" onclick="myFunctionsubmitVehicle()" type="submit"> ADD NEW VEHICLE </button>
+                <br><br>
+            </div>  
+        </div>
+
+<!-- <script>
+    function myFunctionsubmitaddVehicle() {
+        let text = "New driver details have been added SUCESSFULLY . . .";
+        if (confirm(text) == true) {
+        text = "You pressed OK!";
+        } else {
+        text = "You canceled!";
+        }
+        document.getElementById("demo").innerHTML = text;
+    }
+</script> -->
+
+    
+</body>
+</html>

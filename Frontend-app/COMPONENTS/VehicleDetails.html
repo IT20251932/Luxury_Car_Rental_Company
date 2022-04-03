@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/VehicleDetails.css">
+
+    <title>VEHICLE DETAILS</title>
+</head>
+
+<body>
+
+  <div class="mainbluesurface" id="mainbluesurface">
+      
+    <div class="topnav">
+        <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <a class="active" href="VehicleAdminDashboard.html">Home</a>
+            <a class="active" href="VehicleAdminLogin.html">LogOut</a>
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="">  
+      <button class="addnew" onclick="myFunctionaddnew()">  Add New Vehicle </button>
+    </div>
+
+    <div class="tablecontent">
+      <div class="driverdetailcontent" style="overflow-x:auto;">
+          <table>
+            <tr>
+              <th>Vehicle No</th>
+              <th>Vehicle Type</th>
+              <th>No of Seats</th>
+              <th>Colour</th>
+              <th>Phone Number</th>
+            </tr>
+
+            <tr>
+              <td>KO-2448</td>
+              <td>Vitz</td>
+              <td>4</td>
+              <td>Black</td>
+              <td>0778443271</td>
+              
+            </tr>
+          </table>
+        </div>
+        
+          
+      </div>
+  </div>
+<!-- Onclick function for "Add New Vehicle"-->
+  <script>
+    function myFunctionaddnew() {
+      location.replace("AddNewVehicle.html")
+    }
+</script>
+
+</body>
+</html>

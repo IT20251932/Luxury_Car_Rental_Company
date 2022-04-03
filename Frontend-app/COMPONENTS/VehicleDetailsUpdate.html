@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/VehicleUpdate.css">
+
+    <title> Update Vehicle Details </title>
+</head>
+
+<body>
+
+    <div class="mainbluesurface" id="mainbluesurface">
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+            <div class="topnav-right">
+                <!-- Dropdown in the navigation bar-->
+                <div class="dropdown">
+                    <button class="dropbtn">Vehicle
+                        <img src="../IMAGES/Dropdown.png" alt="dropdown" id="dropdownicon"> 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="VehicleAssigned.html"> Vehicle </a>
+                      <a href="VehicleVacant.html"> Vacant </a>
+                      <a href="Vehicle'Register New Vehicle.html"> Register New Vehicle </a>
+                      <a href="VehicleReport.html"> Report </a>
+                      <a href="AddNewVehicle.html"> Add New Vehicle  </a>
+                    </div>
+                </div>
+
+                <a class="active" href="VehicleAdminDashboard.html">Home</a>
+                <a class="active" href="VehicleAdminLogin.html">LogOut</a>
+            </div>
+        </div>
+        <hr id="headerhr">
+
+        <div class="contentblock"> 
+            <h2 id="topic" > Update Vehicle Details </h2>
+
+            <!-- Update driver details -->
+            <table class="updateformtable" >  
+                <form class="updatedriverform" action="/action_page.php">
+                    <tr>
+                        <td><label for="fname">Vehicle No </label> </td> <!-- cannot update-->
+                        <td> : </td>
+                        <td> <input class="forminput" type="text" id="rdate" name="rdate" required ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fname"> Vehicle Type </label> </td> <!-- can update-->
+                        <td> : </td>
+                        <td> <input class="forminput" type="text" id="rdate" name="rdate" required > </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="fname"> No of Seats </label> </td> <!-- can update-->
+                        <td> : </td>
+                        <td> <input class="forminput" type="text" id="fname" name="fname" value="" required> </td>
+                    </tr>
+                    <tr>
+                        <td> <label for="lname">Colour </label> </td> <!-- can update-->
+                        <td> : </td>
+                        <td> <input class="forminput" type="text" id="lname" name="lname" value="" required> </td>
+                    </tr>
+                    <tr>
+                        <td>  <label for="NIC">Phone Number </label> </td> <!-- can update-->
+                        <td> : </td>
+                        <td> <input class="forminput" type="text" id="nic" name="nic" maxlength="12" value="" required> </td>
+                    </tr>
+                </form>
+            </table>
+
+            <br>
+            <!-- The button to confirm the update -->
+            <!-- Once the update is clicked a alert msg will be poped up -->
+            <button class="updateconfirmbtn" onclick="updateconfirmfunction()" type="submit"> CONFIRM UPDATE </button>
+
+            <!-- The button to cancle the update -->
+            <!-- Once the cancle btn is clicked it will navigation to the previous page -->
+            <button class="submitcanclebtn" onclick="canclefunction()"> CANCLE</button>
+            <br><br>
+        </div>  
+    </div>
+
+    <script>
+
+        function updateconfirmfunction() {
+          location.replace("#")
+        }
+    
+        function canclefunction() {
+          location.replace("VehicleView.html")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Dashboard.css">
+
+    <title>Vehicle' ADMIN DASHBOARD</title>
+</head>
+
+<body>
+
+    <div class="mainbluesurface" id="mainbluesurface">
+       
+        <div class="topnav">
+            <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+            <div class="topnav-right">
+                <a class="active" href="VehicleAdminDashboard.html">Home</a>
+                <a class="active" href="VehicleAdminLogin.html">LogOut</a>
+            </div>
+        </div>
+        <hr id="headerhr">
+
+        <div class="maintopics">
+            <div class="subtopics" onclick="myFunction1()">  Vehicle   <br> <p class="numberof"> 58 </p> </div>
+            <div class="subtopics" onclick="myFunction2()">  Vacant  <br> <p class="numberof"> 30 </p> </div>
+            <div class="lowersubtopics" onclick="myFunction3()">  Register New Vehicle  
+                <img src="../IMAGES/go.png" alt="reportgo" id="reportgo"> </div>
+            <div class="lowersubtopics" onclick="myFunction4()">  Report   
+                <img src="../IMAGES/go.png" alt="requestgo" id="requestgo"></div>
+        </div>
+    </div>
+
+    <script>
+        function myFunction1() {
+          location.replace("VehicleDetails.html")
+        }
+
+        function myFunction2() {
+          location.replace("VehicleVacant.html")
+        }
+
+        function myFunction3() {
+          location.replace("RegisterNewVehicle.html")
+        }
+
+        function myFunction4() {
+          location.replace("Vehicle'Report.html")
+        }
+
+    </script>
+    
+
+</body>
+</html>

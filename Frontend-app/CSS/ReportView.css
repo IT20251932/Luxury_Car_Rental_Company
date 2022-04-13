@@ -56,3 +56,19 @@
     border: none;
     text-align: center;
   }
+
+  .backbtn{
+    float: right;
+    margin-top: 50px;
+    margin-right: -300px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 48px;
+    background-color: #0000FF;
+    border-radius: 20px;
+    font-size:20px ;
+    color: #FFFFFF;
+    font-weight: 500;
+    border: none;
+    text-align: center;
+  }

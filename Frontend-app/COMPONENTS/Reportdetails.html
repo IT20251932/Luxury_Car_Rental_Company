@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/CommonForAll.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/ReportView.css">
+
+    <title> Report Details </title>
+</head>
+
+<body>
+
+    <div class="mainbluesurface" id="mainbluesurface">
+        <!-- Navigation bar -->
+        <div class="topnav">
+            <img src="../IMAGES/sublogo2.png" alt="logo login" id="sublogo">
+            <div class="topnav-right">
+                <!-- Dropdown in the navigation bar-->
+                <div class="dropdown">
+                    <button class="dropbtn">Report
+                        <img src="../IMAGES/Dropdown.png" alt="dropdown" id="dropdownicon"> 
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="DriverDetails.html"> Driver </a>
+                        <a href="DriverAssigned.html"> Assigned </a>
+                        <a href="DriverVacant.html"> Vacant </a>
+                        <a href="DriverBookingRequests.html"> Requests </a>
+                        <a href="AddNewDriver.html"> Add New Driver  </a>
+                    </div>
+                </div>
+
+                <a class="active" href="DriverAdminDashboard.html">Home</a>
+                <a class="active" href="DriverAdminLogin.html">LogOut</a>
+            </div>
+        </div>
+        <hr id="headerhr">
+
+        <div class="contentblock"> 
+            <h2 id="topic" > Update Driver Details </h2>
+
+            <!-- Update driver details -->
+            <table class="reportformtable" >  
+                <form class="reportdriverviewform" action="/action_page.php">
+                    <tr>
+                        <td><label for="from">From </label> </td> <!-- cannot update-->
+                        <!-- <td> : </td>
+                        <td>  </td> -->
+                    </tr>
+                    <tr>
+                        <td><label for="to"> To </label> </td> <!-- cannot update-->
+                        <!-- <td> : </td>
+                        <td>  </td> -->
+                    </tr>
+                    <tr>
+                        <td> <label for="year"> Year </label> </td> <!-- cannot update-->
+                        <!-- <td> : </td>
+                        <td>  </td> -->
+                    </tr>
+                    <tr>
+                        <td> <label for="status"> Status </label> </td> <!-- cannot update-->
+                        <!-- <td> : </td>
+                        <td>  </td> -->
+                    </tr>
+                    <tr>
+                        <td>  <label for="no.ofdrivers"> Number of drivers </label> </td> <!-- can update-->
+                        <!-- <td> : </td>
+                        <td> </td> -->
+                    </tr>
+                </form>
+            </table>
+
+            <br>
+            <!-- download button is used to download the report as  -->
+            <button class="downloadbtn" onclick="downloadfunction()"> DOWNLOAD REPORT</button>
+            <br><br>
+        </div>  
+    </div>
+
+    <!-- <script>
+        function downloadfunction() {
+          location.replace()
+        }
+
+    </script> -->
+</body>
+</html>

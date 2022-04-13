@@ -85,20 +85,25 @@
                 <!-- After clicking add button a confirmation alert should pop up-->
                 <button class="submitbtn" onclick="myFunctionsubmitadddriver()" type="submit"> ADD NEW DRIVER </button>
                 <br><br>
+                <button class="addcanclebtn" onclick="addcanclefunction()"> CANCLE</button>
             </div>  
         </div>
 
-<!-- <script>
-    function myFunctionsubmitadddriver() {
-        let text = "New driver details have been added SUCESSFULLY . . .";
-        if (confirm(text) == true) {
-        text = "You pressed OK!";
-        } else {
-        text = "You canceled!";
+<script>
+    // function myFunctionsubmitadddriver() {
+    //     let text = "New driver details have been added SUCESSFULLY . . .";
+    //     if (confirm(text) == true) {
+    //     text = "You pressed OK!";
+    //     } else {
+    //     text = "You canceled!";
+    //     }
+    //     document.getElementById("demo").innerHTML = text;
+    // }
+
+    function addcanclefunction() {
+          location.replace("DriverDetails.html")
         }
-        document.getElementById("demo").innerHTML = text;
-    }
-</script> -->
+</script> 
 
     
 </body>

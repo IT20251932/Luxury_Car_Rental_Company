@@ -1,0 +1,77 @@
+<!-- <p>add-driver works!</p> -->
+
+
+<div class="mainbluesurface" id="mainbluesurface">
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <img src="../../../assets/vendor/driver/images/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <!-- Dropdown in the navigation bar-->
+            <!-- <div class="dropdown">
+                <button class="dropbtn">Add New Driver
+                    <img src="../../../assets/vendor/driver/images/Dropdown.png" alt="dropdown" id="dropdownicon">
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/admin/driver/view-drivers/']" [queryParams]="{ request: 'all' }"> Driver </a>
+                    <a [routerLink]="['/admin/driver/view-drivers/']" [queryParams]="{ request: 'assign' }"> Assigned </a>
+                    <a [routerLink]="['/admin/driver/view-drivers/']" [queryParams]="{ request: 'vacant' }"> Vacant </a>
+                    <a href="Drivers'Report.html"> Report </a>
+                </div>
+            </div> -->
+
+            <a class="active" [routerLink]="['/admin/driver/dashboard-driver']">Home</a>
+            <!-- <a class="active" (click)="logout()">LogOut</a> -->
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="contentblock">
+        <h2 id="topic"> Add New Driver </h2>
+
+        <table class="addnewformtable">
+
+            <tr>
+                <td> <label for="fname">First Name </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="fname" type="text" id="fname" name="fname" value="" required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="lname">Last Name </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="lname" type="text" id="lname" name="lname" value="" required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="NIC"> NIC </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="nic" type="text" id="nic" name="nic" maxlength="12" value=""
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="Licence No.">Licence No. </label></td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="lno" type="text" id="lno." name="Licence No." value=""
+                        required> </td>
+            </tr>
+            <tr>
+                <td> <label for="phoneno."> Contact No. </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="phone" type="tel" id="phone" name="phone"
+                        placeholder="076 456 7890" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="email"> E-mail </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="email" type="email" id="email" name="email" required> </td>
+            </tr>
+            <!-- </form> -->
+        </table>
+
+        <br>
+        <!-- After clicking add button a confirmation alert should pop up-->
+        <button class="submitbtn" (click)="addDriver()" type="button"> ADD NEW DRIVER </button>
+        <br><br>
+    </div>
+</div>

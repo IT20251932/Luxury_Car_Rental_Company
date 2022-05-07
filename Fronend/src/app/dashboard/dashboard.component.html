@@ -1,0 +1,90 @@
+<!-- <p>dashboard works!</p> -->
+
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div style="background: #001d48;border-radius: 35px 35px 0 0;">
+
+        <div class="topnav">
+            <div class="topnav-right">
+                <!-- <br> -->
+                <!-- <center> -->
+                <img src="../../assets/vendor/inquiry/frontend/images/sublogo2.png" alt="logo login" id="sublogo">
+                <!-- </center> -->
+            </div>
+        </div>
+        <div style="margin-top: 28px; display: block;">
+            <div style="float: left; margin-top: 20px;">
+                <a class="test" [routerLink]="['/index']">Home</a>
+                <a class="test">About</a>
+                <a class="test">Car Listing </a>
+                <a class="test">Contact US</a>
+                <a class="test" id="btnlogin" [routerLink]="['/user-sign-in']" *ngIf="loginShow">Login</a>
+                <a class="test" id="btnlogin" [routerLink]="['/user-sign-up']" *ngIf="loginShow">Register</a>
+                <a class="test" id="btnlogout" (click)="logout()" *ngIf="logoutShow">Logout</a>
+            </div>
+            <div style="float: right; padding-right: 25px;">
+                <input placeholder="Search" style="width: 80%;height: 38px;padding: 12px;font-size: 20px;" type="text"
+                    [(ngModel)]="searchValue" (ngModelChange)="search($event)" />
+                <i style="font-size: 35px;color: #fff; margin-left: 20px;" class="fa-solid fa-user-tie"></i>
+            </div>
+        </div>
+        <hr class="headerhr" />
+    </div>
+
+    <div class="mainbluesurface2" id="">
+        <div class="row">
+            <div class="">
+                <div class="text-center mt-3">
+                    <h1 className="text" style="color: rgb(0, 0, 0);"><b>All Service Vehicles</b></h1>
+                    <!-- </br></br> -->
+
+                    <div class="grid-container">
+
+
+                        <div class="grid-item" *ngFor="let item of getData">
+                            <div>
+                                <img src="{{ image_location }}{{ item.image }}" class="img-fluid" />
+                            </div>
+
+                            <div style="text-align: start;padding: 0px 0px 10px 20px;margin-top: 15px;">
+                                <h1 class="modal__title">
+                                    <p>vehicle type : {{ item.vehicle_type }}</p>
+                                </h1>
+                                <p class="modal__description">vehicle color : {{ item.vehicle_color }}</p>
+                                <p class="modal__description">no of seats : {{ item.no_of_sheets }}</p>
+                                <p class="modal__description">price per 1Hr : {{ item.price_per_hour }}</p>
+                            </div>                            <button style="margin-bottom: 20px;" class="button btn-info" data-toggle="modal"
+                                data-target="#exampleModal" (click)="showModel(item.id)">Book</button>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal da" id="detailsModel" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true" [ngStyle]="{'display':displayStyle}">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="grid-item">
+                                    <img src="{{ image_location }}{{ selectedItemData.image }}" alt="..."
+                                        class="img-fluid" style="height: 230px;" />
+                                    <div style="text-align: start;padding: 0px 0px 10px 20px;margin-top: 15px;">
+                                        <h1 class="modal__title">
+                                            <p>vehicle type: {{ selectedItemData.vehicle_type }}</p>
+                                        </h1>
+                                        <p class="modal__description">vehicle color: {{ selectedItemData.vehicle_color
+                                            }}</p>
+                                        <p class="modal__description">no of seats: {{ selectedItemData.no_of_sheets }}
+                                        </p>
+                                        <p class="modal__description">price per 1Hr: {{ selectedItemData.price_per_hour
+                                            }}</p>
+                                    </div>
+                                    <button style="margin-bottom: 20px;" type="button" class="button btn-info"
+                                        data-dismiss="modal" (click)="closeModel()">Close</button>
+                                    <button style="margin-bottom: 20px;" class="button btn-info"
+                                        (click)="addInquiryPage(selectedItemData.id, selectedItemData.vehicle_no)">Book
+                                        Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>

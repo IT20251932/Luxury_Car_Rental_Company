@@ -1,0 +1,87 @@
+/* The Modal (background) */
+.view {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 80%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.viewbookingtable {
+  background-color: #fefefe;
+  margin: auto;
+  /* border: 1px solid #888; */
+  width: 700px;
+  border-radius: 40px;
+  height: 300px;
+  /* overflow: scroll; */
+  color: #150050;
+  z-index: 0;
+}
+
+/* The Close Button */
+.close {
+  margin-right: 25px;
+  margin-top: 5px;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.viewforminput {
+  margin-left: -20px;
+  font-size: 20px;
+  text-align: left;
+  width: 318px;
+  height: 40px;
+  border-radius: 25.39px;
+  border: none;
+}
+#downloadbtn {
+  border-radius: 25px;
+  width: 310px;
+  height: 40px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 22px;
+  color: #ffffff;
+  padding: 6px 20px;
+  margin-top: 15px;
+  margin-left: 290px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  position: relative;
+  top: 300px;
+  z-index: 5;
+}
+
+#topic {
+  padding-left: 240px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #31118b;
+  float: center;
+}
+
+.viewbookingreport {
+  margin-left: 100px;
+}
+
+button:hover {
+  opacity: 0.8;
+}

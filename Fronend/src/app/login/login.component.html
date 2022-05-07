@@ -1,0 +1,40 @@
+<!-- <p>login works!</p> -->
+
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="row">
+        <div class="column">
+            <img src="../../assets/vendor/driver/images/mainlogo.png" alt="logo login" id="mainlogo">
+        </div>
+
+        <div class="column">
+            <form class="loginform">
+                <div class="icon">
+                    <!-- <a href="DriverAdminHome.html" class="backicon">
+                        <img src="../../assets/vendor/driver/images/back arrow.png" alt="navigate back"></a> -->
+                    <img src="../../assets/vendor/driver/images/back arrow.png" [routerLink]="['/index']"
+                        alt="navigate back">
+                    <!-- To navigate to the home page -->
+                </div>
+
+                <div class="headercontainer">
+                    <h4> Management Login </h4>
+                </div>
+
+                <div class="container">
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" [(ngModel)]="email" placeholder="Enter Email" name="email" required>
+                    <br>
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" [(ngModel)]="psw" placeholder="Enter Password" name="psw" required>
+                    <br>
+                    <button id="login" (click)="adminLogin()" type="button">LOGIN</button><br><br>
+                    <label for="fpsw" style="text-align: center;"><b>Forget Password ? </b></label>
+                    <p style="font-size: 18px;margin-top: -1px;"> Contact system administrator <br> 077 8043 8144</p>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

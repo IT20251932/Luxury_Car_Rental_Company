@@ -1,0 +1,90 @@
+.tablecontent {
+  width: 1377px;
+  height: 350px;
+  background-color: #e5e5e5;
+  margin-top: 110px;
+  margin-left: 25px;
+  border-radius: 40px;
+}
+
+table {
+  margin-left: 30px;
+  margin-top: 40px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 15px;
+}
+
+#assign {
+  border-radius: 25px;
+  width: 100px;
+  height: 20px;
+  background-color: #00ff00;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.addnew {
+  float: right;
+  border-radius: 25px;
+  width: 235px;
+  height: 41px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 55px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+.generate {
+  float: right;
+  border-radius: 25px;
+  width: 235px;
+  height: 41px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-right: 55px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+#confirm {
+  float: right;
+  border-radius: 25px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 20px;
+  color: #ffffff;
+  padding: 6px 18px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.forminput {
+  float:right;
+  font-size: 20px;
+  text-align: center;
+  width: 255px;
+  height: 41px;
+  border-radius: 25.39px;
+  border: none;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-right: 55px;
+}

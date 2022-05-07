@@ -1,0 +1,69 @@
+<!-- <p>view-bookings works!</p> -->
+
+<div class="mainbluesurface" id="mainbluesurface">
+    <div class="topnav">
+        <img src="../../../assets/vendor/booking/images/sublogo2.png" alt="logo login" id="sublogo" />
+        <div class="topnav-right">
+            <a class="active" [routerLink]="['/admin/booking/dashboard-booking']">Home</a>
+            <!-- <a class="active" href="BookingAdminLogin.html">LogOut</a> -->
+        </div>
+    </div>
+    <hr id="headerhr" />
+
+    <div class="">
+        <!-- <button class="addnew" [routerLink]="['/admin/booking/add-booking/']">Add New Booking</button> -->
+        <input class="forminput" type="text" id="place" name="place" placeholder="Search...." [(ngModel)]="searchValue"
+            (ngModelChange)="search($event)" />
+    </div>
+
+
+    <div class="tablecontent">
+        <div class="bookingdetailcontent" style="overflow-x: auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Driver Name</th>
+                        <th>Name</th>
+                        <th>Vehicle No. Plate</th>
+                        <th>Contact Number</th>
+                        <th>Email</th>
+                        <th>Pickup Date</th>
+                        <th>Pickup Time</th>
+                        <th>Pickup Place</th>
+                        <th>Drop-off Time</th>
+                        <th>Drop-off Date</th>
+                        <th>Drop-off Place</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let item of getData">
+                        <td>{{item.id}}</td>
+                        <td>{{item.driver_first_name}} {{item.driver_last_name}} - {{item.driver_id}}</td>
+                        <td>{{item.full_name}}</td>
+                        <td>{{item.vehicle_no}}</td>
+                        <td>{{item.contact_no}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.pick_up_date}}</td>
+                        <td>{{item.pick_up_time}}</td>
+                        <td>{{item.pick_up_location}}</td>
+                        <td>{{item.drop_off_time}}</td>
+                        <td>{{item.drop_off_date}}</td>
+                        <td>{{item.drop_off_location}}</td>
+
+                        <td><button id="confirm" [routerLink]="['/admin/booking/view-booking-details/']"
+                                [queryParams]="{ id: item.id }">View</button>
+                        </td>
+
+                        <td><button id="confirm" (click)="doneBooking(item.id)">Done</button></td>
+
+                        <td><button id="confirm" (click)="deleteBooking(item.id)">Delete</button></td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>

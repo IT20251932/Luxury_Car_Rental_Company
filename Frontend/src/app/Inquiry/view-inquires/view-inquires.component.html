@@ -1,0 +1,66 @@
+<!-- <p>view-inquires works!</p> -->
+
+<div class="mainbluesurface" id="mainbluesurface">
+    <div class="topnav">
+        <img src="../../../assets/vendor/booking/images/sublogo2.png" alt="logo login" id="sublogo" />
+        <div class="topnav-right">
+            <a class="active" [routerLink]="['/admin/booking/dashboard-booking/']">Home</a>
+            <!-- <a class="active" href="">LogOut</a> -->
+        </div>
+    </div>
+    <hr id="headerhr" />
+
+    <div class="">
+        <button class="addnew" [routerLink]="['/admin/inquiry/admin-add-inquiry']">Add New Inquiry</button>
+        <input class="forminput" type="text" id="place" name="place" placeholder="Search...." [(ngModel)]="searchValue"
+            (ngModelChange)="search($event)" />
+    </div>
+
+
+    <div class="tablecontent">
+        <div class="bookingdetailcontent" style="overflow-x: auto">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Inquiry ID</th>
+                        <th>Full Name</th>
+                        <th>Pickup Location</th>
+                        <th>Pick Up Time</th>
+                        <th>Pick Up Date</th>
+                        <th>Drop Off Date</th>
+                        <th>Contact No</th>
+                        <th>Email</th>
+                        <th>No. Of Passengers</th>
+                        <th>Drop-off Location</th>
+                        <th>Drop-off Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let item of getData">
+                        <td>{{item.id}}</td>
+                        <td>{{item.full_name}}</td>
+                        <td>{{item.pick_up_location}}</td>
+                        <td>{{item.pick_up_time}}</td>
+                        <td>{{item.pick_up_date}}</td>
+                        <td>{{item.drop_off_date}}</td>
+                        <td>{{item.contact_no}}</td>
+                        <td>{{item.email}}</td>
+                        <td>{{item.no_of_passengers}}</td>
+                        <td>{{item.drop_off_location}}</td>
+                        <td>{{item.drop_off_time}}</td>
+
+                        <td>
+                            <a [routerLink]="['/admin/inquiry/view-inquiry-details']"
+                                [queryParams]="{ id: item.id }">View</a>
+                            <!-- <button id="confirm">View</button> -->
+                        </td>
+
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>

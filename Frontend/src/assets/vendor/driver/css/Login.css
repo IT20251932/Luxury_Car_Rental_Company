@@ -1,0 +1,117 @@
+/* To navigate to the home page */
+.icon{
+  margin-top: 50px;
+}
+
+.backicon{
+  width:45px ;
+  height: 45px;
+}
+
+
+/* To make the boxes lie to each other */
+* {
+    box-sizing: border-box;
+  }
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#mainlogo{
+    width: 600px;
+    height: 550px;
+    margin-left:65px ;
+    margin-top: 15px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+/* Form */
+.loginform{
+    margin-right:110px;
+    margin-top: -30px;
+}
+
+.headercontainer {
+    margin-top: -75px;
+    text-align: center;
+    color: rgba(44, 97, 233, 1);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+  }
+  
+
+input[type=text], input[type=password] {
+    font-size: 20px;
+    padding: 12px 20px;
+    margin: 14px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: 404.92px;
+    height: 53.21px;
+    border-radius: 20px;
+
+}
+
+#login {
+    border-radius: 25px;
+    width: 266.39px;
+    height: 59px;
+    background-color: rgba(4, 100, 252, 1);
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 14px 20px;
+    margin-top: 40px;
+    margin-left: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: -30px;
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 80px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}

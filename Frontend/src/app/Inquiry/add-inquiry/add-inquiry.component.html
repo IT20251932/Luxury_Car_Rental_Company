@@ -1,0 +1,93 @@
+<!-- <p>add-inquiry works!</p> -->
+
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="row">
+
+        <div class="">
+            <form class="" action="" method="post">
+
+                <div class="heading" style="text-align: center;">
+
+                    <h1>Quick Inquiry Form</h1>
+
+                </div>
+                <div class="">
+
+                    <table class="addnewformtable">
+
+                        <tr>
+                            <td><label style="font-size: 22px; color:#000066;" for="id">Full Name </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="name" type="text" id="name" name="name"
+                                    placeholder="Full Name" required> </td>
+                            <td> <label style="font-size: 22px; color:#000066;" for="did">Email </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="email" placeholder="example@gmail.com"
+                                    type="email" id="email" name="email" maxlength="243" value="" disabled> </td>
+                        </tr>
+                        <tr>
+                            <td><label style="font-size: 22px; color:#000066;" for="pLocation">Pick Up Location </label>
+                            </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="pLocation" placeholder="Pick Up Location"
+                                    type="text" id="pLocation" name="pLocation" required> </td>
+                            <td><label style="font-size: 22px; color:#000066;" for="lname">Pick Up Date </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="pdate" placeholder="" type="date" id="pdate"
+                                    name="pdate" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label style="font-size: 22px; color:#000066;" for="Vplate">Pick Up Time </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="ptime" placeholder="" type="time" id="time"
+                                    name="ptime" value="" required> </td>
+                            <td> <label style="font-size: 22px; color:#000066;" for="phoneno">No Of passenger's </label>
+                            </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="passenger" type="text" id="passenger"
+                                    name="passenger" placeholder="No Of passengers " required> </td>
+                        </tr>
+                        <tr>
+                            <td> <label style="font-size: 22px; color:#000066;" for="email"> Contact Number </label>
+                            </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="pnumber" type="tel" id="pnumber" name="pnumber"
+                                    pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required> </td>
+                            <td> <label style="font-size: 22px; color:#000066;" for="date"> Drop Off Location </label>
+                            </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="dlocation" type="text" id="dlocation"
+                                    name="dlocation" value="" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td> <label style="font-size: 22px; color:#000066;" for="time">Drop Off Date </label></td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="ddate" type="date" id="ddate" name="ddate"
+                                    value="" required>
+                            </td>
+                            <td><label style="font-size: 22px; color:#000066;" for="place"> Drop Off Time </label> </td>
+                            <td> : </td>
+                            <td> <input class="forminput" [(ngModel)]="dtime" type="time" id="dtime" name="dtime"
+                                    required> </td>
+                        </tr>
+
+                    </table>
+
+
+
+
+                    <td> <button id="register" type="submit" (click)="returnToServicesPage()">CANCEL</button> </td>
+                    &nbsp;&nbsp;
+                    <td> <button id="register" (click)="addInquiry()" type="submit">SUBMIT</button> </td>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>

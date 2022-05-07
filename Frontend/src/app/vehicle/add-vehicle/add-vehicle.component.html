@@ -1,0 +1,93 @@
+<!-- <p>add-vehicle works!</p> -->
+
+
+<div class="mainbluesurface" id="mainbluesurface">
+    <!-- Navigation bar -->
+    <div class="topnav">
+        <img src="../../../assets/vendor/vehicle/images/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <!-- Dropdown in the navigation bar-->
+            <!-- <div class="dropdown">
+                <button class="dropbtn">Register New Vehicle
+                    <img src="../../../assets/vendor/vehicle/images/Dropdown.png" alt="dropdown" id="dropdownicon">
+                </button>
+                <div class="dropdown-content">
+                    <a [routerLink]="['/admin/vehicle/view-vehicles']"> Vehicle </a>
+                    <a href="VehicleVacant.html"> Vacant </a>
+                    <a href="VehicleBookingRequests.html"> Requests </a>
+                </div>
+            </div> -->
+
+            <a class="active" [routerLink]="['/admin/vehicle/dashboard-vehicle']">Home</a>
+            <!-- <a class="active" (click)="logout()">LogOut</a> -->
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="contentblock">
+        <h2 id="topic"> Register New Vehicle</h2>
+        <!-- Form of adding a new driver to the system-->
+        <table class="addnewformtable">
+            <!-- <form action=""> -->
+            <tr>
+                <td><label for="vehicle_no">Vehicle No </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="vehicle_no" type="text" id="vehicle_no" name="vehicle_no"
+                        required> </td>
+            </tr>
+            <tr>
+                <td> <label for="vehicle_type">Vehicle Type </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="vehicle_type" type="text" id="vehicle_type"
+                        name="vehicle_type" value="" required> </td>
+            </tr>
+            <tr>
+                <td> <label for="no_seats">No.of seats </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="no_seats" type="text" id="no_seats" name="no_seats" value=""
+                        required> </td>
+            </tr>
+            <tr>
+                <td> <label for="color"> Vehicle Colour </label> </td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="color" type="text" id="color" name="color" maxlength="12"
+                        value="" required>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="number">Phone Number </label></td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="number" type="text" id="number" name="number" value=""
+                        required> </td>
+            </tr>
+
+            <tr>
+                <td> <label for="owner">Owner Name </label></td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="owner" type="text" id="owner" name="owner" value="" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="price">Price Per Hour</label></td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="price" type="text" id="price" name="price" value="" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for="price">Vehicle Image</label></td>
+                <td> : </td>
+                <td> <input class="forminput" [(ngModel)]="image" (change)="fileEvent($event)" type="file" id="image"
+                        name="image" accept="image/*" required>
+                </td>
+            </tr>
+
+            <!-- </form> -->
+        </table>
+
+        <br>
+        <button class="submitbtn" (click)="addVehicle()" type="button"> ADD NEW VEHICLE </button>
+        <br><br>
+    </div>
+</div>

@@ -1,0 +1,201 @@
+/* To navigate to the home page */
+.icon {
+  margin-top: 50px;
+}
+
+.backicon {
+  width: 45px;
+  height: 45px;
+}
+
+/* To make the boxes lie to each other */
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: right;
+  width: 100%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#mainlogo {
+  width: 550px;
+  height: 540px;
+  margin-left: 425px;
+  margin-top: -280px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+#sign{
+  width: 100px;
+  height: 100px;
+  margin-left: 150px;
+  margin-top:40px;
+
+}
+
+#register1{
+  height: 115px;
+  margin-left:420px;
+  margin-top: 40px;
+}
+
+
+
+
+
+
+/* Form */
+.loginform {
+  margin-right:20px;
+  margin-top:-80px;
+}
+
+
+.REGISTERform{
+  margin-right: 10px;
+  margin-left: -10PX;
+  margin-top: -400px;
+}
+
+.headercontainer {
+  margin-top: -75px;
+  text-align: center;
+  color: rgb(14, 68, 206);
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+}
+
+input[type="text"],
+input[type="password"] ,
+input[type="email"] ,
+input[type="phone number"]
+
+{
+  font-size: 20px;
+  padding: 10px 0px;
+  margin: 10px 0;
+  display: inline-block;
+  width: 340.2px;
+  border:  none; 
+ transition:  all .3s linear; 
+  color:  #000; 
+  height: 50.21px;
+  border-radius: 5px;
+}
+
+
+
+
+#login {
+  border-radius: 25px;
+  width: 266.39px;
+  height: 59px;
+  background-color: rgba(86, 84, 233, 0.795);
+  font-size: 24px;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin-top: 110px;
+  margin-left: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+#register{
+  border-radius: 25px;
+  width: 240.39px;
+  height: 59px;
+  background-color: rgba(86, 84, 233, 0.795);;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 14px 20px;
+  margin-top: 10px;
+  margin-left: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+.loginclasss{
+
+margin-top: -350px;
+
+}
+
+.register{
+  margin-top:-400px;
+  margin-bottom:200px;
+  margin-left:1050px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container {
+  padding: -30px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 80px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.textbox { 
+  height: 25px; 
+  width: 275px; 
+  background-color: transparent;  
+  border-style: solid;  
+  border-width: 0px 0px 1px 0px;  
+  border-color: rgb(215, 221, 135); 
+  outline:0; 
+} 
+
+
+

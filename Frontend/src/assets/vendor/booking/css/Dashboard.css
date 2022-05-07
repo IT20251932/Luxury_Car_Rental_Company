@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+.maintopics {
+  margin-left: 250px;
+}
+.maintopics::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style the buttons inside the maintopics*/
+.subtopics {
+  float: left;
+  width: 446px;
+  height: 150px;
+  background-color: #CCCCCC;
+  border: 2px solid #FFFFFF;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 45px;
+  color: #000000;  
+  border-radius: 30px;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding-top: 40px;
+}
+
+.lowersubtopics {
+  float: left;
+  width: 646px;
+  height: 180px;
+  background-color: #cccccc;
+  border: 2px solid #ffffff;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 45px;
+  color: #000000;
+  border-radius: 30px;
+  margin-left: 45px;
+  margin-top: 15px;
+  padding-top: 60px;
+}
+
+.monthof {
+  font-size: 60px;
+  margin-top: -1px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+
+.submitbtn {
+  width: 525px;
+  height: 48px;
+  background-color: #0000ff;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+
+#reportgo,
+#requestgo {
+  width: 65px;
+  height: 45px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.reportcomp {
+  margin-left: 540px;
+  width: 365px;
+  height: 145px;
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.centerbtn {
+  margin-left: 500px;
+}

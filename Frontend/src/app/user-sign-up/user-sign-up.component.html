@@ -1,0 +1,43 @@
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="row">
+        <div class="column">
+            <img src="../../assets/vendor/driver/images/mainlogo.png" alt="logo login" id="mainlogo">
+        </div>
+
+        <div class="column">
+            <form class="loginform">
+                <div class="icon">
+                    <!-- <a href="DriverAdminHome.html" class="backicon">
+                        <img src="../../assets/vendor/driver/images/back arrow.png" alt="navigate back"></a> -->
+                    <img src="../../assets/vendor/driver/images/back arrow.png" [routerLink]="['/index']"
+                        alt="navigate back">
+                    <!-- To navigate to the home page -->
+                </div>
+
+                <div class="headercontainer">
+                    <h4> User Sign Up </h4>
+                </div>
+
+                <div class="container">
+                    <label for="name"><b>Name</b></label><br>
+                    <input type="text" [(ngModel)]="rname" placeholder="Enter Name" name="rname" required>
+                    <br>
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" [(ngModel)]="remail" placeholder="Enter Email" name="lemail" required>
+                    <br>
+
+                    <label for="number"><b>Phone Number</b></label><br>
+                    <input type="text" [(ngModel)]="rnumber" placeholder="Enter Number" name="rnumber" required>
+                    <br>
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" [(ngModel)]="rpsw" placeholder="Enter Password" name="rpsw" required>
+                    <br>
+                    <button id="login" (click)="userSignUp()" type="button">Sign Up</button><br><br>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

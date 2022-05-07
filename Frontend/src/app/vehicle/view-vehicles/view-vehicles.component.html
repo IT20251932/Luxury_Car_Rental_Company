@@ -1,0 +1,61 @@
+<!-- <p>view-vehicles works!</p> -->
+
+
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="topnav">
+        <img src="../../../assets/vendor/vehicle/images/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <a class="active" [routerLink]="['/admin/vehicle/dashboard-vehicle']">Home</a>
+            <!-- <a class="active" href="VehicleAdminLogin.html">LogOut</a> -->
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="">
+        <button [routerLink]="['/admin/vehicle/add-vehicle']" class="addnew"> Add New Vehicle </button>
+        <input class="forminput" type="text" id="place" name="place" placeholder="Search...." [(ngModel)]="searchValue"
+            (ngModelChange)="search($event)" />
+    </div>
+
+    <div class="tablecontent">
+        <div class="driverdetailcontent" style="overflow-x:auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehicle Id</th>
+                        <th>Vehicle No</th>
+                        <th>Vehicle Type</th>
+                        <th>No of Seats</th>
+                        <th>Colour</th>
+                        <th>Phone Number</th>
+                        <th>Owner Name</th>
+                        <th>Price Per Hour</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let item of getData">
+                        <td>{{item.id}}</td>
+                        <td>{{item.vehicle_no}}</td>
+                        <td>{{item.vehicle_type}}</td>
+                        <td>{{item.no_of_sheets}}</td>
+                        <td>{{item.vehicle_color}}</td>
+                        <td>{{item.contact_no}}</td>
+                        <td>{{item.owner_name}}</td>
+                        <td>{{item.price_per_hour}}</td>
+                        <td>
+                            <button id="vehicleview" [routerLink]="['/admin/vehicle/view-vehicle-details']"
+                                [queryParams]="{ id: item.id }">View</button>
+                        </td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+    </div>
+</div>

@@ -21,7 +21,7 @@ export class ViewInquiryDetailsComponent implements OnInit {
   dlocation: string = "";
   ddate: string = "";
   dtime: string = "";
-  vehicle:string = "";
+  vehicle: string = "";
 
   inquiry_id: string = "";
 

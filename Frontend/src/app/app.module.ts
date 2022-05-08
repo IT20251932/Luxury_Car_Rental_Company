@@ -27,6 +27,7 @@ import { DashboardVehicleComponent } from './vehicle/dashboard-vehicle/dashboard
 import { AdminAddInquiryComponent } from './Inquiry/admin-add-inquiry/admin-add-inquiry.component';
 import { UserSignInComponent } from './user-sign-in/user-sign-in.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
     DashboardVehicleComponent,
     AdminAddInquiryComponent,
     UserSignInComponent,
-    UserSignUpComponent
+    UserSignUpComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,39 @@
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="row">
+        <div class="column">
+            <img src="../../assets/vendor/driver/images/mainlogo.png" alt="logo login" id="mainlogo">
+        </div>
+
+        <div class="column">
+            <form class="loginform">
+                <div class="icon">
+                    <img src="../../assets/vendor/driver/images/back arrow.png" [routerLink]="['/index']"
+                        alt="navigate back">
+                </div>
+
+                <div class="headercontainer">
+                    <h4> User Profile </h4>
+                </div>
+
+                <div class="container">
+                    <label for="name"><b>Name</b></label><br>
+                    <input type="text" [(ngModel)]="rname" placeholder="Enter Name" name="rname" required>
+                    <br>
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" [(ngModel)]="remail" placeholder="Enter Email" name="lemail" disabled>
+                    <br>
+
+                    <label for="number"><b>Phone Number</b></label><br>
+                    <input type="text" [(ngModel)]="rnumber" placeholder="Enter Number" name="rnumber" required>
+                    <br>
+
+                    <button id="login" (click)="updateProfile()" type="button">Update Profile</button><br><br>
+                    <button id="login" (click)="removeProfile()" type="button">Remove Profile</button><br><br>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>

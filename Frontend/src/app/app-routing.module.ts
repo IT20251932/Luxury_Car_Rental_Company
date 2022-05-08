@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserSignInComponent } from './user-sign-in/user-sign-in.component';
 import { UserSignUpComponent } from './user-sign-up/user-sign-up.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 // Admin
 import { AdminHomeComponent } from './admin-home/admin-home.component';
@@ -41,6 +42,7 @@ const routes: Routes = [
   { path: 'index', component: DashboardComponent },
   { path: 'user-sign-in', component: UserSignInComponent },
   { path: 'user-sign-up', component: UserSignUpComponent },
+  { path: 'user-profile', component: UserProfileComponent },
   { path: 'login', component: LoginComponent },
   {
     path: 'admin', children: [

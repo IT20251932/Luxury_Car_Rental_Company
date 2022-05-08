@@ -33,11 +33,6 @@ export class UserSignUpComponent implements OnInit {
 
   userSignUp() {
 
-    console.log("******** " + this.rname);
-    console.log("******** " + this.remail);
-    console.log("******** " + this.rnumber);
-    console.log("******** " + this.rpsw);
-
     if (this.rname == '' || this.remail == '' || this.rnumber == '' || this.rpsw == '') {
       this.warningMsg('Fields are empty!');
 

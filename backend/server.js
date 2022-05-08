@@ -20,6 +20,7 @@ const inquiry_router = require("./routes/inquiry");
 const booking_router = require("./routes/booking");
 const admin_router = require("./routes/admin");
 const user_router = require("./routes/user");
+const report_router = require("./routes/report");
 
 // Use routes
 app.use("/vehicle", vehicle_router);
@@ -28,6 +29,7 @@ app.use("/inquiry", inquiry_router);
 app.use("/booking", booking_router);
 app.use("/admin", admin_router);
 app.use("/user", user_router);
+app.use("/report", report_router);
 
 // Server run
 app.listen(PORT, () => {

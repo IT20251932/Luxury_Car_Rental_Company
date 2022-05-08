@@ -1,0 +1,28 @@
+<!-- <p>dashboard-booking works!</p> -->
+
+
+<div class="mainbluesurface" id="mainbluesurface">
+    <div class="topnav">
+        <img src="../../../assets/vendor/booking/images/sublogo2.png" alt="logo login" id="sublogo" />
+        <div class="topnav-right">
+            <a class="active" [routerLink]="['/admin/home']">Home</a>
+            <a class="active" (click)="logout()">LogOut</a>
+        </div>
+    </div>
+    <hr id="headerhr" />
+
+    <div class="maintopics">
+        <button class="subtopics" [routerLink]="['/admin/booking/view-bookings/']">
+            Booking Details <br />
+            <p class="numberof"></p>
+        </button>
+        <button class="subtopics" [routerLink]="['/admin/inquiry/view-inquires']">
+            Pending Inquiries <br />
+            <p class="numberof"></p>
+        </button>
+        <p class="numberof"></p>
+    </div>
+    <div class="lowersubtopics reportcomp" (click)="generateReport()">
+        Report <img src="../../../assets/vendor/booking/images/go.png" alt="reportgo" id="reportgo" />
+    </div>
+</div>

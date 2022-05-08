@@ -46,7 +46,7 @@ router.get("/:id", (req, res) => {
     const { id } = req.params;
 
     let details = [];
-    connection.query(`SELECT booking.id as id, driver_id, full_name, 
+    connection.query(`SELECT booking.id as id, driver_id, driver.first_name as driver_first_name, driver.last_name as driver_last_name, full_name, 
                 vehicle.vehicle_no as vehicle_no, inquiry.contact_no as contact_no, inquiry.email as email, pick_up_date, pick_up_time, 
                 pick_up_location, drop_off_time, drop_off_date,
                 drop_off_location, inquiry_id FROM booking  
@@ -99,6 +99,36 @@ router.put("/:id", (req, res) => {
                     res.json({ status: "error", msg: "Booking recode not updated!" });
                 } else {
                     res.json({ status: "success", msg: "Booking recode updated!" });
+                }
+
+            });
+
+        }
+
+    });
+
+});
+
+
+router.put("/driver/:id", (req, res) => {
+
+    const { id } = req.params;
+    const { driver_id } = req.body;
+
+    connection.query(`SELECT COUNT(id) as booking_count FROM booking WHERE id = ${id}`, (error, results, fields) => {
+        if (error) throw error;
+        details = results;
+        booking_count = details[0]['booking_count']
+
+        if (booking_count < 1) {
+            res.json({ status: "error", msg: "Booking not exist!" });
+        } else {
+
+            connection.query(`UPDATE booking SET driver_id = ${driver_id} WHERE id = '${id}'`, (error, results, fields) => {
+                if (error) {
+                    res.json({ status: "error", msg: "Driver not updated!" });
+                } else {
+                    res.json({ status: "success", msg: "Driver recode updated!" });
                 }
 
             });

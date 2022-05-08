@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@angular/cli": "^11.2.11",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "multer": "^1.4.4",
     "mysql": "^2.18.1",
+    "nodemailer": "^6.7.5",
     "nodemon": "^2.0.15",
     "pdf-creator-node": "^2.3.4"
   }

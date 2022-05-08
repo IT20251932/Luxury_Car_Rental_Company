@@ -52,7 +52,7 @@ router.post("", (req, res) => {
                     if (error) {
                         res.json({ status: "error", msg: "Account not created!" });
                     } else {
-                        res.json({ status: "success", msg: "Account created successfully!." });
+                        res.json({ status: "success", msg: "Account created successfully!. Please Sign in" });
                     }
 
                 });

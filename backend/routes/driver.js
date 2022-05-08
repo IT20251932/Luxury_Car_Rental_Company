@@ -17,6 +17,36 @@ router.get("/", (req, res) => {
 });
 
 
+router.get("/assign", (req, res) => {
+
+    let details = [];
+    connection.query(`SELECT id, first_name, last_name, nic, license_no, contact_no, email, registered_date 
+                        FROM driver WHERE id in (SELECT DISTINCT(driver_id) from booking where status = 0)`,
+        (error, results, fields) => {
+            if (error) throw error;
+            details = results;
+
+            res.json(details);
+        });
+
+});
+
+
+router.get("/vacant", (req, res) => {
+
+    let details = [];
+    connection.query(`SELECT id, first_name, last_name, nic, license_no, contact_no, email, registered_date 
+                        FROM driver WHERE id not in (SELECT DISTINCT(driver_id) from booking where status = 0)`,
+        (error, results, fields) => {
+            if (error) throw error;
+            details = results;
+
+            res.json(details);
+        });
+
+});
+
+
 router.get("/count", (req, res) => {
 
     let details = [];

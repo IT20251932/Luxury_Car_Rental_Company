@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+  }
+  
+.maintopics::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Style the buttons inside the maintopics*/
+/* .name {
+    float: left;
+    width: 416px;
+    height: 150px;
+    background-color: #CCCCCC;
+    border: 2px solid #FFFFFF;
+    display: table;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 45px;
+    color: #000000;  
+    border-radius: 30px;
+    margin-left: 45px;
+    margin-top: 15px;
+    padding-top: 40px;
+}  */
+
+.name{
+    float: left;
+    width: 500px;
+    height: 50px;
+    background-color: #CCCCCC;
+    border: 2px solid #FFFFFF;
+    display: table;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 38px;
+    color: #000000;  
+    border-radius: 30px;
+    margin-left: 140px;
+    margin-top: 15px; 
+    padding-top: 10px;
+} 
+
+/* .numberof{
+    font-size: 60px;
+    margin-top: -1px;
+    padding-top: 10px; 
+    font-weight: 700;
+} */
+
+#reportgo , #requestgo{
+    width:65px ;
+    height: 45px;
+    padding-top: 10px;
+    padding-left: 20px;
+}

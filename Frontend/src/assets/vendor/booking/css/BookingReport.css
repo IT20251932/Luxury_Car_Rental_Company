@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+.maintopics::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style the buttons inside the maintopics*/
+/* .name {
+  float: left;
+  width: 416px;
+  height: 150px;
+  background-color: #CCCCCC;
+  border: 2px solid #FFFFFF;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 45px;
+  color: #000000;  
+  border-radius: 30px;
+  margin-left: 45px;
+  margin-top: 15px;
+  padding-top: 40px;
+}  */
+
+.name {
+  float: left;
+  width: 500px;
+  height: 50px;
+  background-color: #cccccc;
+  border: 2px solid #ffffff;
+  display: table;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 38px;
+  color: #000000;
+  border-radius: 30px;
+  margin-left: 140px;
+  margin-top: 15px;
+  padding-top: 20px;
+}
+
+/* .numberof{
+  font-size: 60px;
+  margin-top: -1px;
+  padding-top: 10px; 
+  font-weight: 700;
+} */
+
+#reportgo,
+#requestgo {
+  width: 65px;
+  height: 45px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#downloadbtn {
+  border-radius: 25px;
+  width: 510px;
+  height: 40px;
+  background-color: rgba(4, 100, 252, 1);
+  font-size: 22px;
+  color: #ffffff;
+  padding: 6px 20px;
+  margin-top: 15px;
+  margin-left: 800px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 600px;
+}
+.report {
+  background-color: rgb(21 8 59);
+  width: 1429px;
+  border-radius: 40px;
+  margin-top: 86px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 530px;
+}
+
+.forminput {
+  font-size: 20px;
+  text-align: center;
+  margin-left: 30px;
+  width: 318px;
+  height: 40px;
+  border-radius: 25.39px;
+  border: none;
+}

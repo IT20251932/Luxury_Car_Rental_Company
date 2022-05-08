@@ -32,10 +32,25 @@ router.get("/", (req, res) => {
 });
 
 
+router.get("/vacant", (req, res) => {
+
+    let details = [];
+    connection.query(`SELECT id, vehicle_no, vehicle_type, no_of_sheets, vehicle_color, contact_no, owner_name, price_per_hour, image FROM vehicle WHERE id not in 
+                    (SELECT DISTINCT(vehicle_id) from inquiry where id in (SELECT DISTINCT(inquiry_id) from booking where status = 0))`,
+        (error, results, fields) => {
+            if (error) throw error;
+            details = results;
+
+            res.json(details);
+        });
+
+});
+
+
 router.get("/count", (req, res) => {
 
     let details = [];
-    connection.query(`SELECT COUNT(id) as count FROM driver`,
+    connection.query(`SELECT COUNT(id) as count FROM vehicle`,
         (error, results, fields) => {
             if (error) throw error;
             details = results;
@@ -49,7 +64,8 @@ router.get("/count", (req, res) => {
 router.get("/count/assigned", (req, res) => {
 
     let details = [];
-    connection.query(`SELECT COUNT(id) as count FROM driver WHERE id in (SELECT DISTINCT(vehicle_no) from booking where status = 0)`,
+    connection.query(`SELECT COUNT(id) as count FROM vehicle WHERE id in 
+    (SELECT DISTINCT(vehicle_id) from inquiry where id in (SELECT DISTINCT(inquiry_id) from booking where status = 0))`,
         (error, results, fields) => {
             if (error) throw error;
             details = results;
@@ -63,7 +79,8 @@ router.get("/count/assigned", (req, res) => {
 router.get("/count/vacant", (req, res) => {
 
     let details = [];
-    connection.query(`SELECT COUNT(id) as count FROM driver WHERE id not in (SELECT DISTINCT(vehicle_no) from booking where status = 0)`,
+    connection.query(`SELECT COUNT(id) as count FROM vehicle WHERE id not in 
+    (SELECT DISTINCT(vehicle_id) from inquiry where id in (SELECT DISTINCT(inquiry_id) from booking where status = 0))`,
         (error, results, fields) => {
             if (error) throw error;
             details = results;

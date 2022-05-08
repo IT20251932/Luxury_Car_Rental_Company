@@ -8,7 +8,7 @@ const path = require('path');
 const options = require('../helpers/options');
 const sendMailer = require("../utils/mailer");
 
-// For get all
+// For get all.....
 router.get("/", (req, res) => {
 
     let details = [];

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pdf Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body style="padding-left: 50px;padding-right: 50px;">
+    <h4 style=" color: black;font-size:16;font-weight:800;text-align:center;">Inquiry</h4>
+    <br />
+    <br />
+
+    <h4><b>User Details</b></h4>
+    <h5><b>Name</b> : {{ full_name }}</h5>
+    <h5><b>Contact No</b> : {{ contact_no }}</h5>
+    <h5><b>Email</b> : {{ email }}</h5>
+
+    <br />
+    <br />
+
+    <h4><b>Pick Up Details</b></h4>
+    <h5><b>Location</b> : {{ pick_up_location }}</h5>
+    <h5><b>Date</b> : {{ pick_up_date }}</h5>
+    <h5><b>Time</b> : {{ pick_up_time }}</h5>
+
+    <br />
+    <br />
+
+    <h4><b>Drop Off Details</b></h4>
+    <h5><b>Location</b> : {{ drop_off_location }}</h5>
+    <h5><b>Date</b> : {{ drop_off_date }}</h5>
+    <h5><b>Time</b> : {{ drop_off_time }}</h5>
+
+    <br />
+    <br />
+
+    <h4><b>Other</b></h4>
+    <h5><b>Passengers Count</b> : {{ no_of_passengers }}</h5>
+    <h5><b>Vehicle No</b> : {{ vehicle_no }}</h5>
+    <h5><b>Vehicle Type</b> : {{ vehicle_type }}</h5>
+    <h5><b>Vehicle Color</b> : {{ vehicle_color }}</h5>
+    <h5><b>Price Per Hour</b> : Rs. {{ price_per_hour }}</h5>
+
+</body>
+
+</html>

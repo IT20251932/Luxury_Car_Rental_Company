@@ -18,12 +18,12 @@ router.get("/", (req, res) => {
 
 
 // For get by id
-router.get("/:id", (req, res) => {
+router.get("/:email", (req, res) => {
 
-    const { id } = req.params;
+    const { email } = req.params;
 
     let details = [];
-    connection.query(`SELECT id, name, email, number FROM users WHERE id = '${id}'`,
+    connection.query(`SELECT id, name, email, number FROM users WHERE email = '${email}'`,
         (error, results, fields) => {
             if (error) throw error;
             details = results;
@@ -83,12 +83,12 @@ router.post("/login", (req, res) => {
 });
 
 // For update
-router.put("/:id", (req, res) => {
+router.put("/:email", (req, res) => {
 
     const { name, number } = req.body;
     const { email } = req.params;
 
-    connection.query(`SELECT COUNT(id) as users_count FROM users WHERE email = '${email}'`, (error, results, fields) => {
+    connection.query(`SELECT COUNT(email) as users_count FROM users WHERE email = '${email}'`, (error, results, fields) => {
         if (error) throw error;
         details = results;
         users_count = details[0][' users_count']
@@ -150,7 +150,7 @@ router.delete("/:email", (req, res) => {
 
     const { email } = req.params;
 
-    connection.query(`DELETE FROM users WHERE email = ${email}`, (error, results, fields) => {
+    connection.query(`DELETE FROM users WHERE email = '${email}'`, (error, results, fields) => {
 
         if (error) {
             res.json({ status: "error", msg: "Account not deleted. Try again later! " + error });

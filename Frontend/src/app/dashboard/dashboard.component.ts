@@ -48,7 +48,7 @@ export class DashboardComponent implements OnInit {
       let item_details = this.getData[0]
       this.selectedItemData = item_details;
 
-     
+
     });
 
   }

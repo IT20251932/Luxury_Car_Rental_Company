@@ -20,6 +20,7 @@
                 <a class="test">Contact US</a>
                 <a class="test" id="btnlogin" [routerLink]="['/user-sign-in']" *ngIf="loginShow">Login</a>
                 <a class="test" id="btnlogin" [routerLink]="['/user-sign-up']" *ngIf="loginShow">Register</a>
+                <a class="test" id="btnlogout" [routerLink]="['/user-profile']" *ngIf="logoutShow">Profile</a>
                 <a class="test" id="btnlogout" (click)="logout()" *ngIf="logoutShow">Logout</a>
             </div>
             <div style="float: right; padding-right: 25px;">
@@ -53,7 +54,7 @@
                                 <p class="modal__description">vehicle color : {{ item.vehicle_color }}</p>
                                 <p class="modal__description">no of seats : {{ item.no_of_sheets }}</p>
                                 <p class="modal__description">price per 1Hr : {{ item.price_per_hour }}</p>
-                            </div>                            <button style="margin-bottom: 20px;" class="button btn-info" data-toggle="modal"
+                            </div> <button style="margin-bottom: 20px;" class="button btn-info" data-toggle="modal"
                                 data-target="#exampleModal" (click)="showModel(item.id)">Book</button>
                         </div>
 

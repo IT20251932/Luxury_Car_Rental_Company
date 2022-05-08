@@ -1,0 +1,31 @@
+<!-- <p>dashboard-vehicle works!</p> -->
+
+
+<div class="mainbluesurface" id="mainbluesurface">
+
+    <div class="topnav">
+        <img src="../../../assets/vendor/driver/images/sublogo2.png" alt="logo login" id="sublogo">
+        <div class="topnav-right">
+            <a class="active" [routerLink]="['/admin/home']">Home</a>
+            <a class="active" (click)="logout()">LogOut</a>
+        </div>
+    </div>
+    <hr id="headerhr">
+
+    <div class="maintopics">
+        <div class="subtopics" [routerLink]="['/admin/vehicle/view-vehicles']" [queryParams]="{ request: 'all' }">
+            Vehicle <br>
+            <p class="numberof" (mouseover)="getParagraphEvent($event)">{{vehiclesCount}}</p>
+        </div>
+        <div class="subtopics" [routerLink]="['/admin/vehicle/view-vehicles']" [queryParams]="{ request: 'vacant' }">
+            Vacant <br>
+            <p class="numberof" (mouseover)="getParagraphEvent($event)">{{vacantCount}}</p>
+        </div>
+        <div class="lowersubtopics" [routerLink]="['/admin/vehicle/add-vehicle']"> Register New Vehicle
+            <img src="../../../assets/vendor/driver/images/go.png" alt="reportgo" id="reportgo">
+        </div>
+        <div class="lowersubtopics" (click)="generateReport()"> Report
+            <img src="../../../assets/vendor/driver/images/go.png" alt="requestgo" id="requestgo">
+        </div>
+    </div>
+</div>

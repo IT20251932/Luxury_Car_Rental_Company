@@ -75,3 +75,7 @@
 .deleteformtable td {
   padding-top: 10px;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+.viewcontent::-webkit-scrollbar {
+  display: flex;
+}

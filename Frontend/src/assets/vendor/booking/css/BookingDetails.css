@@ -77,7 +77,7 @@ button:hover {
 }
 
 .forminput {
-  float:right;
+  float: right;
   font-size: 20px;
   text-align: center;
   width: 255px;
@@ -87,4 +87,9 @@ button:hover {
   cursor: pointer;
   margin-top: 40px;
   margin-right: 55px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.viewcontent::-webkit-scrollbar {
+  display: flex;
 }

@@ -12,7 +12,7 @@ const sendMailer = require("../utils/mailer");
 router.get("/", (req, res) => {
 
     let details = [];
-    connection.query(`SELECT inquiry.id, full_name, vehicle_no, inquiry.contact_no, email, pick_up_date, pick_up_time, 
+    connection.query(`SELECT inquiry.id, full_name, vehicle_no, inquiry.contact_no, email,no_of_passengers, pick_up_date, pick_up_time, 
     pick_up_location, drop_off_time, drop_off_date,
     drop_off_location FROM inquiry
     INNER JOIN vehicle ON vehicle_id = vehicle.id
@@ -32,6 +32,7 @@ router.get("/:id", (req, res) => {
     const { id } = req.params;
 
     let details = [];
+   
     connection.query(`SELECT inquiry.id as id, full_name, pick_up_location, pick_up_time, pick_up_date, drop_off_date,
     inquiry.contact_no as contact_no, email, no_of_passengers, drop_off_location, drop_off_time, vehicle_no FROM inquiry 
                         INNER JOIN vehicle ON vehicle.id = inquiry.vehicle_id WHERE inquiry.id = '${id}'`,
@@ -41,6 +42,8 @@ router.get("/:id", (req, res) => {
 
             res.json(details);
         });
+
+        
 
 });
 

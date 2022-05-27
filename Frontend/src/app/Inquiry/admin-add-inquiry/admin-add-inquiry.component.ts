@@ -61,7 +61,7 @@ export class AdminAddInquiryComponent implements OnInit {
     } else if (this.isValidEmail(this.email) != true) {
       this.warningMsg('Your email not valid!');
 
-    }else if (this.pnumber.length < 11 || this.pnumber.match(/^((?:\+))(\d{9,})$/) === null) {
+    }else if (this.pnumber.length != 12 || this.pnumber.match(/^((?:\+))(\d{9,})$/) === null) {
       this.warningMsg('Your mobile number not valid! Format should be  +94 25 222 3130');
     
     } else {

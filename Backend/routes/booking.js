@@ -20,7 +20,7 @@ router.get("/pending", (req, res) => {
 
 });
 
-
+//For get all
 router.get("/", (req, res) => {
 
     let details = [];
